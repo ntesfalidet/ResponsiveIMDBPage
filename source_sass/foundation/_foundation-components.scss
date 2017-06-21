@@ -1,11 +1,11 @@
-/* 
+/*
   Includes for all foundation styles
   Make sure foundation is correctly add to gulp build path in gulpfile.js
   Commenting out line will remove that foundation component from compiled css
 */
 
 @import 'settings';
-@import 'foundation';
+@import '../../public/lib/foundation-sites/scss/foundation';
 
 @include foundation-global-styles; // Always include the global-styles
 
