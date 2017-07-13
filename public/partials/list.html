@@ -1,0 +1,42 @@
+<div ng-controller = "listController">
+  <div class = "row">
+	<div class = "search-bar">
+		<input class = "search-holder" ng-model="query" placeholder="Search">
+		<br></br>
+		<select ng-model = "rank_sort">
+			<!-- comment line below later -->
+			<option value = "rank">Rank</option>
+			<option value = "title">Title</option>
+		</select>
+
+		<div class = "container">
+			<input ng-checked = "true" type="radio" ng-model="order" value="">Ascending</input>
+			<input type = "radio" ng-model="order" value="reverse">Descending</input>
+		</div>
+	</div>
+  </div>
+
+
+  <div class = "row">
+  	<div class = "outer-background">
+  		<div ng-show = "query" ng-hide = "true" ng-repeat = "movie in movies | filter:query | orderBy:rank_sort:order">
+  			<div class = " list-foundation large-3 medium-4 small-12 column end">
+  				<a ng-href = "#/details/{{movie.rank}}">
+  				<div class = "list-view">
+
+  					<div class = "inner-left">
+  						<img ng-src = "./data/images/{{movie.imdbID}}.jpg"/>
+  					</div>
+
+  					<div class = "inner-right">
+  						<h6>{{movie.title}}</h6>
+  						<h6>Rank: {{movie.rank}}</h6>
+  					</div>
+
+  				</div>
+  			</div>
+  		</div>
+  	</div>	
+  </div>
+</div>
+

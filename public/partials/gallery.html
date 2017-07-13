@@ -1,0 +1,27 @@
+<div ng-controller = "galleryController">
+	<div class = "row">
+		<div class = "outer-background">
+			<span ng-repeat="genre in genres">
+				<div class = "large-1 small-3 column end">
+      				<a href ng-click="assignClassification(genre);">{{genre}}</a>
+      			</div>
+      		</span>
+    	</div>
+  	</div>
+
+  	<div class = "row">
+	<div ng-repeat = "movie in movies | filter: filterByGenre | orderBy:'rank'">
+		<div class = "gallery-foundation large-2 column medium-3 small-6 end">
+			<a ng-href = "#/details/{{movie.rank}}"> 
+				<div class = "gallery-view">
+					<img ng-src = "./data/images/{{movie.imdbID}}.jpg"/>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+</div>
+
+<!--a ng-href="#/details/{{m.rank}}"-->
+<!--a ng-href="#/details/10"-->
+

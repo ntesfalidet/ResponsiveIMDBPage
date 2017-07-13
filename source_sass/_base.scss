@@ -1,1 +1,187 @@
 // Add any custom Sass & CSS here
+
+header {
+	padding: 15px;
+}
+
+h1 {
+	text-align: center;
+	font-weight: bold;
+}
+
+
+.two-buttons {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.button {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+/*----------------------------------GALLERY VIEW------------------------------------*/
+
+.gallery-foundation {
+	padding: 0px;
+}
+
+.gallery-view {
+	height: 250px;
+	padding: 10px;
+}
+
+.gallery-view:hover {
+	padding: 2px;
+	/*padding-left: 2px;*/
+	cursor: pointer;
+}
+
+.gallery-view img {
+	height: 230px;
+}
+
+
+/*----------------------------------------LIST VIEW----------------------------------------*/
+
+/*search-bar and outer-background are supposed to be contained within the same div (one div)...this still works though*/
+
+.search-bar {
+	margin: 0 auto;
+	width: 90%;
+  
+}
+
+.search-holder {
+	width: 100%; 
+	height: 40px;
+}
+
+.outer-background {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.list-foundation {
+	padding: 0px;
+}
+
+.list-foundation.large-3 inner-left {
+	width: 50%;
+	
+}
+
+.list-view {
+	background-color: $lightergrey;
+	color: $black;
+	border-radius: 3px/3px;
+  	border: 3px solid white;
+  	position: relative;
+	padding: 10px;
+	/*vertical-align: middle;*/
+	height: 180px;
+}
+
+.list-view:hover {
+	background-color: $darkergrey;
+	color: $black;
+}
+
+.inner-left {
+	height: 130px;
+	width: 40%;
+	float: left;
+	padding-top: 12px;
+	padding-left: 12px;
+
+}
+
+.inner-right {
+	height: 130px;
+	float: right;
+	/*width: 110px;*/
+	width: 50%;
+	padding-left: 15px;
+	padding-top: 9px;
+}
+
+.inner-right h6 {
+	font-weight: bold;
+}
+
+.inner-left img {
+	height: 130px;
+}
+
+
+/*--------------------------------------DETAILS VIEW-----------------------------------*/ 
+
+.arrows {
+	padding: 10px;
+	padding-top: 40px;
+ 	margin: 0 auto;
+  	vertical-align: middle;
+
+}
+
+.outer-background-2 {
+  display: table;
+  margin: 0 auto;
+  width: 95%;
+}
+
+
+.two-columns {
+  display: table-cell;
+  padding: 15px;
+}
+
+.rightarrow {
+	float: right;
+	color: black;
+	font-size: 1.5em;
+}
+
+.rightarrow:hover {
+	float: right;
+	color: black;
+	font-size: 1.5em;
+}
+
+
+.leftarrow {
+	float: left;
+	color: black;
+	font-size: 1.5em;
+	
+}
+
+.leftarrow:hover {
+	float: left;
+	color: black;
+	font-size: 1.5em;
+}
+
+.detail-foundation-1 {
+	padding: 0px;
+}
+
+.detail-foundation-2 {
+	padding: 0px;
+}
+
+h4 {
+	font-weight: bold;
+}
+
+.two-columns {
+	color: $black;
+	width: 500px;
+}
+
+
+
+
+
+
+

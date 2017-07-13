@@ -49,7 +49,7 @@ module.exports = function(grunt) {
         tasks: ['compass:dev',]
       }, //sass
       html: {
-        files: ['public/*.html']
+        files: ['public/*.html', 'public/partials/*.html']
       }
     }, //watch
     express: {

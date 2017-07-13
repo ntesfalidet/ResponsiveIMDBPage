@@ -1,0 +1,36 @@
+<!--http://foundation.zurb.com/forum/posts/20290-two-column-to-single-column-on-small-screens-->
+<!-- https://github.com/zurb/foundation-sites/issues/8111 -->
+
+<div ng-controller = "detailController">
+
+	<div class = "row">
+		<div class = "arrows">
+			<a class = "leftarrow" ng-click = "leftFunct()" href="#/details/{{Rank - 1}}"><<</a>
+			<a class = "rightarrow" ng-click = "rightFunct()" href="#/details/{{Rank - 1 + 2}}">>></a>
+
+			<div class = "outer-background-2">
+				
+				<div class = "detail-foundation-1 small-12 medium-6 columns text-center columns">
+				<div class = "two-columns"><img ng-src="./data/images/{{movies[Rank - 1].imdbID}}.jpg"/></div>
+				</div>
+
+				<div class = "detail-foundation-2 small-12 medium-6 columns text-center medium-text-left">
+				<div class = "two-columns">
+					<h4>{{movies[Rank - 1].title}}</h5>
+					<h4>Rank: {{movies[Rank - 1].rank}}</h5>
+					<br></br>
+				
+					<p>{{movies[Rank - 1].plot}}</p>
+					
+					<p>IMDb Rating: {{movies[Rank - 1].imdbRating}}</p>
+					<p>Awards: {{movies[Rank - 1].awards}}</p>
+					<p>Rated: {{movies[Rank - 1].rated}}</p>
+					<p>Released: {{movies[Rank - 1].released}}</p>
+					<p>Runtime: {{movies[Rank - 1].runtime}}</p>
+				</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
